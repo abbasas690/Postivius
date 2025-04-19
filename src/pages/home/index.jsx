@@ -1,8 +1,13 @@
 import React from 'react'
+import HeroSection from './heroSection';
+import LogosTiles from '../../components/logosTile';
 
 function HomePage() {
   return (
-    <div>HomePage</div>
+    <>
+    <HeroSection />
+    <LogosTiles />
+    </>
   )
 }
 

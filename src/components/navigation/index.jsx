@@ -19,13 +19,13 @@ function Navigation() {
   }
 
   return (
-      <header className='flex justify-between px-1 sm:justify-around items-center'>
+      <header className=' max-w-9/10  mx-auto flex justify-between  md:justify-between items-center my-4 md:my-12'>
         {/* logo */}
         <NavLink to="/">
-        <img src={Logo} className='size-25 sm:size-25 md:size-30' alt="" />
+        <img src={Logo} className='h-5 md:h-6 ' alt="" />
         </NavLink>
         {/* desktop menu */}
-      <nav className="hidden sm:flex gap-2">
+      <nav className="hidden md:flex gap-2">
         <NavLink to="/aboutUs" end className={({isActive})=> isActive ? 'bg-accent px-2.5 py-1 rounded-md  font-semibold' : 'hover:text-accent px-2.5 py-1 '}>about us</NavLink> 
         <NavLink to="/service" end className={({isActive})=> isActive ? 'bg-accent px-2.5 py-1 rounded-md font-semibold' : 'hover:text-accent px-2.5 py-1 '}>service</NavLink> 
         <NavLink to="/useCase" end className={({isActive})=> isActive ? 'bg-accent px-2.5 py-1 rounded-md font-semibold' : 'hover:text-accent px-2.5 py-1 '}>Use Case</NavLink> 
@@ -33,14 +33,14 @@ function Navigation() {
         <NavLink to="/blog" end className={({isActive})=> isActive ? 'bg-accent px-2.5 py-1 rounded-md font-semibold' : 'hover:text-accent px-2.5 py-1 '}>Blog</NavLink> 
       </nav>
       {/* desktop nav CTA */}
-      <button className='hidden sm:block outline-2 rounded-sm hover:bg-black hover:text-white py-1 px-2'>Request a quote</button>
+      <button className='hidden md:block outline-2 rounded-sm hover:bg-black hover:text-white py-1 px-2'>Request a quote</button>
       {/*mobile menu  */}
-      <button className='sm:hidden z-50' onClick={toggleMenu}>
+      <button className='md:hidden z-50' onClick={toggleMenu}>
         {isMobileOpen ? <X size={32} onClick={closeMenu} /> :<Menu size={24}/>}
       </button>
       {
         shouldRender && (
-          <div className={`${ isMobileOpen ? 'animate-slide-down': 'animate-slide-up'} absolute top-0 left-0 h-full w-full bg-white shadow sm:hidden flex flex-col justify-center items-center gap-2 p-4`}> 
+          <div className={`${ isMobileOpen ? 'animate-slide-down': 'animate-slide-up'} absolute top-0 left-0  h-full w-full bg-white shadow md:hidden flex flex-col justify-center items-center gap-2 p-4`}> 
           <NavLink to="/service" end onClick={closeMenu} className={({isActive}) => isActive ? 'text-accent font-semibold': 'hover:text-accent'} >Service</NavLink>
           <NavLink to="/aboutUs" end onClick={closeMenu} className={({isActive}) => isActive ? 'text-accent font-semibold': 'hover:text-accent'} >About Us</NavLink>
           <NavLink to="/useCase" end onClick={closeMenu} className={({isActive}) => isActive ? 'text-accent font-semibold': 'hover:text-accent'} >Use Case</NavLink>
