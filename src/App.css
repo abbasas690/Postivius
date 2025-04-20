@@ -46,6 +46,32 @@
           }
 }
 
+@component {
+    .btn-primary {
+        @apply bg-accent text-primary;
+    }
+    .btn-secondary {
+        @apply bg-secondary text-primary;
+    }
+    .btn-accent {
+        @apply bg-primary text-accent;
+    }
+    .btn-outline {
+        @apply border-2 border-accent text-accent;
+    }
+    .btn-link {
+        @apply text-accent underline;
+    }
+}
+
+@utility btn{
+        background-color: black;
+        border-radius: 0.5rem;
+        color: white;
+        border: 2px solid black;
+        transition: all 0.3s ease;
+}
+
 body {
     @apply font-space-Grotesk;
 }
