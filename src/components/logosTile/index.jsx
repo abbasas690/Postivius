@@ -7,7 +7,7 @@ import zoomLogo from '../../assets/zoom.png'
 
 function LogosTiles() {
   return (
-      <div className=" max-w-9/10 mx-auto flex my-8">
+      <div className=" max-w-9/10 sm:max-w-8/10 mx-auto flex my-8">
         <div className="flex w-full flex-row justify-between gap-4">
           <img src={amazonLogo} alt="Amazon" className="h-12 w-12 grayscale" />
           <img src={dribbleLogo} alt="Dribble" className="h-12 w-12 grayscale" />

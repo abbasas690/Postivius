@@ -19,10 +19,10 @@ function Navigation() {
   }
 
   return (
-      <header className=' max-w-9/10  mx-auto flex justify-between  md:justify-between items-center my-4 md:my-12'>
+      <header className=' max-w-9/10 md:max-w-8/10  mx-auto flex justify-between  md:justify-between items-center my-4 md:my-12'>
         {/* logo */}
         <NavLink to="/">
-        <img src={Logo} className='h-5 md:h-6 ' alt="" />
+        <img src={Logo} className='h-5 md:h-4 lg:h-5 ' alt="" />
         </NavLink>
         {/* desktop menu */}
       <nav className="hidden md:flex gap-2">
@@ -40,7 +40,7 @@ function Navigation() {
       </button>
       {
         shouldRender && (
-          <div className={`${ isMobileOpen ? 'animate-slide-down': 'animate-slide-up'} absolute top-0 left-0  h-full w-full bg-white shadow md:hidden flex flex-col justify-center items-center gap-2 p-4`}> 
+          <div className={`${ isMobileOpen ? 'animate-slide-down': 'animate-slide-up'} absolute top-0 left-0  h-full w-full bg-white shadow md:hidden flex flex-col justify-center items-center gap-2 p-4 `}> 
           <NavLink to="/service" end onClick={closeMenu} className={({isActive}) => isActive ? 'text-accent font-semibold': 'hover:text-accent'} >Service</NavLink>
           <NavLink to="/aboutUs" end onClick={closeMenu} className={({isActive}) => isActive ? 'text-accent font-semibold': 'hover:text-accent'} >About Us</NavLink>
           <NavLink to="/useCase" end onClick={closeMenu} className={({isActive}) => isActive ? 'text-accent font-semibold': 'hover:text-accent'} >Use Case</NavLink>
