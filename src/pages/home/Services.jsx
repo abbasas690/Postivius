@@ -1,11 +1,11 @@
 import React from "react";
 import Card from "../../components/Card";
-import Seo from "../../assets/illustration1.png";
-import PayPerClick from "../../assets/illustration(2).png";
-import SocialMedia from "../../assets/illustration(3).png";
+import Seo from "../../assets/Illustration1.png";
+import PayPerClick from "../../assets/Illustration(2).png";
+import SocialMedia from "../../assets/Illustration(3).png";
 import EmailMarketing from "../../assets/emailMarketing.png";
-import ContentMarketing from "../../assets/illustration(4).png";
-import Analytics from "../../assets/illustration(5).png";
+import ContentMarketing from "../../assets/Illustration(4).png";
+import Analytics from "../../assets/Illustration(5).png";
 import CtaImg from "../../assets/CtaImg.png";
 
 function Services() {
@@ -20,7 +20,7 @@ function Services() {
           businesses grow and succeed online. These services include:
         </p>
       </div>
-      <div className="grid gap-6  md:grid-cols-2 ">
+      <div className="grid gap-6   md:grid-cols-2 ">
         <Card text="Search engine optimization" image={Seo} cardColor="white" />
         <Card
           text="Pay-per-click advertising"
@@ -45,7 +45,7 @@ function Services() {
         />
       </div>
 
-      <div className="bg-secondary p-12 mt-12 max-w-6/10 md:max-w-9/10 mx-auto md:flex md:p-6 gap-6 justify-around items-center rounded-3xl">
+      <div className="bg-secondary p-12 mt-12 max-w-9/10 md:max-w-9/10 mx-auto md:flex md:p-6 gap-6 justify-around items-center rounded-3xl">
         <div className="flex flex-col w-fit md:w-1/2  gap-6">
           <h3 className="text-2xl font-bold tracking-tight">
             Let's make things happen
@@ -56,7 +56,7 @@ function Services() {
           </p>
           <button className="btn py-2 px-4">Get your fee proposal</button>
         </div>
-        <img src={CtaImg} className="hidden md:block w-1/2" alt="cta image" />
+        <img src={CtaImg} width={400} className="hidden md:block w-1/2" alt="cta image" />
       </div>
     </div>
   );

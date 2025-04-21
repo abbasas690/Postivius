@@ -33,7 +33,7 @@ function Navigation() {
         <NavLink to="/blog" end className={({isActive})=> isActive ? 'bg-accent px-2.5 py-1 rounded-md font-semibold' : 'hover:text-accent px-2.5 py-1 '}>Blog</NavLink> 
       </nav>
       {/* desktop nav CTA */}
-      <button className='hidden md:block outline-2 rounded-sm hover:bg-black hover:text-white py-1 px-2'>Request a quote</button>
+      <button className='hidden md:block btn py-2 px-4'>Request a quote</button>
       {/*mobile menu  */}
       <button className='md:hidden z-50' onClick={toggleMenu}>
         {isMobileOpen ? <X size={32} onClick={closeMenu} /> :<Menu size={24}/>}

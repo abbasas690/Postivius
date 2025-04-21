@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImg from "../../assets/illustration_hero.png";
+import HeroImg from "../../assets/Illustration_hero.png";
 export default function HeroSection() {
   return (
     <div className=" max-w-9/10 md:max-w-8/10  flex gap-10  items-center flex-col-reverse  md:flex-row  mx-auto lg:justify-between">
@@ -12,7 +12,7 @@ export default function HeroSection() {
           through a range of services including SEO, PPC, social media
           marketing, and content creation.
         </p>
-        <button className=" btn px-6 py-4 hover:text-black hover:bg-white ">
+        <button className=" btn px-6 py-4">
           Book a consultation
         </button>
       </div>

@@ -33,10 +33,10 @@ function Card({ text, image, cardColor }) {
     <div
       className={`${bgColor}  flex flex-col 
       justify-around p-6 max-w-full gap-8 mx-auto border-2 border-black
-      md:flex-row md:items-center md:gap-6 rounded-4xl shadow-[0_4px_0px_rgba(0,0,0,1)] shadow-black`}
+      md:flex-row md:items-center md:gap-6 lg:gap-18 rounded-4xl shadow-[0_4px_0px_rgba(0,0,0,1)] shadow-black`}
     >
-      <div>
-        <h3 className="font-bold text-2xl md:text-xl lg:text-4xl md:mb-6">
+      <div className="w-1/2">
+        <h3 className="font-bold ft flex flex-col gap-2 text-2xl md:text-xl lg:text-4xl md:mb-6 lg:mb-12">
           <div>
             <span className={`${textColor} rounded-lg text-left`}>
               {firstPart}
@@ -57,13 +57,13 @@ function Card({ text, image, cardColor }) {
           <p className={`hidden ${linkColor} sm:inline-block`}>Learn more</p>
         </div>
       </div>
-      <div className="flex justify-around items-end gap-12">
+      <div className="flex  md:block md:w-1/2 justify-around items-end gap-12">
         <div className={``}>
           <ArrowRight
-            className={`${buttonColor} md:hidden rotate-[-45deg] hover:rotate-[0deg] transition-transform duration-150 ease-in-out rounded-full size-9 stroke-2 ${buttonStroke}`}
+            className={`${buttonColor}  md:hidden rotate-[-45deg] hover:rotate-[0deg] transition-transform duration-150 ease-in-out rounded-full size-9 stroke-2 ${buttonStroke}`}
           />
         </div>
-        <img src={image} className="" alt="" />
+        <img src={image} className="" width={400} alt="" />
       </div>
     </div>
   );
